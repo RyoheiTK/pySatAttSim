@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy-quaternion = "*"
+matplotlib = "*"
+flake8 = "*"
+isort = "*"
+pre-commit = "*"
+pyopengl = "*"
+pyopengl-accelerate = "*"
+pygame = "*"
+pillow = "*"
+scipy = "*"
+control = "*"
+seaborn = "*"
+ipython = "*"
+jupyter = "*"
+ipykernel = "*"
+pandas = "*"
+numpy = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+lint = "flake8 triad/ ."
+black = "black triad/ ."
+isort = "isort -c --diff triad/ ."

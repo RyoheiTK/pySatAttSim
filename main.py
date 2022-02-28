@@ -342,13 +342,5 @@ def main():
 
 if __name__ == "__main__":
     imgs = main()
-    imgs[0].save(
-        "gif/no_momentum.gif",
-        save_all=True,
-        append_images=imgs[1:],
-        optimize=False,
-        duration=100,  # 40
-        loop=0,
-    )
     pygame.quit()
     quit()
